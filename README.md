@@ -10,7 +10,7 @@ Scott Atkinson
 * ### [2.1. Reading level](#2.1.)
 * ### [2.2. Custering topics](#2.2.)
 
-## [3. Preprocessing]
+## [3. Preprocessing](#3.)
 * ### [3.0. Most predictive words](#3.0.)
 
 ## [4. Modeling](#4.)
@@ -77,7 +77,7 @@ See the [blog post] for a more extensive discussion of the most predictive words
 
 ## 4. Modeling<a id='4.'></a>
 
-The modeling steps can be found in the [notebook](https://github.com/scatkinson/is_your_advice_unethical/blob/main/EthicalTips.ipynb), and a discussion can be found in the [blog post]. THe use-case of the model as an automated filter for unethical content leads us to prioritize precision. We choose the RandomForestClassifier estimator with threshold 0.5718 to obtain a precision of 89.03% with a recall of 50.20%.
+The modeling steps can be found in the [notebook](https://github.com/scatkinson/is_your_advice_unethical/blob/main/EthicalTips.ipynb), and a discussion can be found in the [blog post]. The use-case of the model as an automated filter for unethical content leads us to prioritize precision. We choose the RandomForestClassifier estimator with threshold 0.5718 to obtain a precision of 89.03% with a recall of 50.20%.
 
 
 ![Precision-recall curve for RandomForestClassifier, predicting membership of a post in the UnethicalLifeProTips subreddit. The position of the selected threshold is indicated in red.and the following table shows the confusion matrix for this the selected threshold.](Report/RF_precision_recall.jpeg "we choose the RandomForestClassifier estimator with threshold 0.5718 to obtain a precision of 89.03% with a recall of 50.20%. The position of the selected threshold is indicated in red.and the following table shows the confusion matrix for this the selected threshold.") 
