@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html >
+<!--From https://codepen.io/frytyler/pen/EGdtg-->
+<head>
+  <meta charset="UTF-8">
+  <title>Is your advice unethical?</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    
+</head>
+
+<body LINK=yellow>
+
+  <a class="active" href="home">Home</a>
+  <a href="about">About</a>
+  <a href="">Blog</a>
+  <a href="https://github.com/scatkinson/is_your_advice_unethical">GitHub Repository</a>
+
+
+ <div class="login">
+	<h1>Is your advice unethical?</h1>
+
+     <!-- Main Input For Receiving Query to our ML -->
+    <form action="{{ url_for('predict')}}"method="post">
+    	<input type="text" name="advice" placeholder="Advice" required="required" />
+
+        <button type="submit" class="btn btn-primary btn-block btn-large">Submit</button>
+    </form>
+
+   <br>
+   <br>
+   
+   {{ advice }}
+   <br>
+   <br>
+   {{ prediction_text }}
+
+ </div>
+
+
+</body>
+</html>
