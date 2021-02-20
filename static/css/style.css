@@ -33,7 +33,8 @@ body {
 
 
 .login { 
-	position: absolute;
+	position: center;
+	text-align: center;
 	top: 40%;
 	left: 50%;
 	margin: -150px 0 0 -150px;
