@@ -48,7 +48,7 @@ def proba_rescale(proba):
 	if proba >= thresh:
 		rescale = 50 + 50 * (proba - thresh)/(maximum-thresh)
 	else:
-		rescale = 50 * (proba)/(thresh-minimum)
+		rescale = 50 * (proba - minimum)/(thresh-minimum)
 	return rescale
 
 
