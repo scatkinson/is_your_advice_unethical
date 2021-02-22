@@ -17,12 +17,27 @@
 <div class="topnav">
   <a class="active" href="home">Home</a>
   <a href="about">About</a>
-  <a href="">Blog</a>
+  <a href="">Blog Post</a>
   <a href="https://github.com/scatkinson/is_your_advice_unethical">GitHub Repository</a>
 </div>
 
+
 <div style="text-align:center;">
 	<h1>Is your advice unethical?</h1>
+	
+	Type in your advice and submit to see what the model says.
+	
+	
+	<br>
+	<br>
+	<div style="color:gray">
+	<i>Example: Fake an illness to get out of work.</i>
+	</div>
+	
+	
+	
+	<br>
+	<br>
 
      <!-- Main Input For Receiving Query to our ML -->
     <form action="{{ url_for('predict')}}"method="post">
@@ -45,7 +60,12 @@
 </body>
 </html>
 
-
+<div style="text-align:right; position:absolute; width:98%;
+    bottom:0;">
+<footer>
+&copy Scott Atkinson 2021
+</footer>
+</div>
 
 </body>
 

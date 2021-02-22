@@ -41,11 +41,20 @@ def lemmatize(text):
     lemma = [lemmatizer.lemmatize(word) for word in tokenized]
     lemmatized_text = ' '.join(lemma)
     return lemmatized_text
+    
+def proba_rescale(proba):
+	minimum = 0.060509
+	maximum = 0.914831
+	if proba >= thresh:
+		rescale = 50 + 50 * (proba - thresh)/(maximum-thresh)
+	else:
+		rescale = 50 * (proba)/(thresh-minimum)
+	return rescale
 
 
 def predict_ethics(advice):
     """Function returns prediction on whether the string variable advice
-    is ethical or not based the traine RandomForestClassifier estimator."""
+    is ethical or not based the trained RandomForestClassifier estimator."""
     
     # preprocess and lemmatize the string
     
@@ -74,9 +83,9 @@ def predict_ethics(advice):
     proba = model.predict_proba(input_matrix)[0,1]
     
     if proba >= thresh:
-        return True, 'Advice: %s'%(original_advice), 'This advice is unethical with Unethical Score %s%%.'%(round(proba*100,1))
+        return True, 'Advice: %s'%(original_advice), 'This advice is unethical with Unethical Score %s%%.'%(round(proba_rescale(proba),1))
     else:
-        return False, 'Advice: %s'%(original_advice), 'This advice is not unethical with Unethical Score %s%%.'%(round(proba*100,1))
+        return False, 'Advice: %s'%(original_advice), 'This advice is not unethical with Unethical Score %s%%.'%(round(proba_rescale(proba),1))
 
 
 

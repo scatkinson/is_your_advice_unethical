@@ -17,15 +17,42 @@
  <div class="topnav">
   <a href="home">Home</a>
   <a class="active" href="about">About</a>
-  <a href="">Blog</a>
+  <a href="">Blog Post</a>
   <a href="https://github.com/scatkinson/is_your_advice_unethical">GitHub Repository</a>
 </div> 
 
-<div class="about_body">
+
 <h1>About</h1>
 
-This is the product of a machine learning project.
+
+
+<div style="text-align: justify">
+
+The model for this app was trained using data from <a href="https://www.reddit.com">Reddit</a>.  
+Half of the data come from the <a href="https://www.reddit.com/r/LifeProTips">r/LifeProTips</a> subreddit,
+and half come from <a href="https://www.reddit.com/r/UnethicalLifeProTips">r/UnethicalLifeProTips</a> subreddit.
+You can read about the project in the corresponding blog post <a href="">found here</a>.  
+The "Unethical Score" returned is a quantification of how strongly the model assesses your advice
+input to be unethical--the higher the score, the more unethical; anything higher than 50% is determined to be unethical.
+
+<br>
+<br>
+
+This model was deployed using the <a href="https://flask.palletsprojects.com/en/1.1.x/">Flask API</a> in Python. 
+You can find all relevant code including the Jupyter notebook at the corresponding
+<a href="https://github.com/scatkinson/is_your_advice_unethical">GitHub repository</a>. 
+The HTML for this site was found at <a href="https://github.com/krishnaik06/Deployment-flask">this repository</a>
+which corresponds with <a href="https://www.youtube.com/watch?v=UbCWoMf80PY">this helpful Flask tutorial video</a>.
 
 </div>
+
+<div style="text-align:right; position:absolute; width:98%;
+    bottom:0;">
+<footer>
+&copy Scott Atkinson 2021
+</footer>
+</div>
+
 </body>
+
 </html>
