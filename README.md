@@ -33,7 +33,7 @@ On the other hand, the pieces of advice coming from UnethicalLifeProTips general
 
 We begin by analyzing the data collected from these two subreddits. In particular, we examine some expected word frequencies, compare reading levels across the subreddits, and cluster the posts to find some common topics using latent Dirichlet allocation. We also examine the most predictive words for each subreddit with a multinomial naive Bayes analysis. Next we train a predictive classification model using the data from the two subreddits. We assess and select our classification model and the proper threshold for the intended use of our model. We close by drawing some conclusions from our findings and discuss potential improvements for the model.
 
-The Python code for this project can be found in [this notebook](https://github.com/scatkinson/is_your_advice_unethical/blob/main/EthicalTips.ipynb). This project also has an accompanying [blog post]() with many examples of quotes from the dataset. An interactive version of the obtained classification model has been made available at this [link].
+The Python code for this project can be found in [this notebook](https://github.com/scatkinson/is_your_advice_unethical/blob/main/EthicalTips.ipynb). This project also has an accompanying [blog post](https://scott-atkinson.medium.com/is-your-advice-unethical-2868f64bfb16) with many examples of quotes from the dataset. An interactive version of the obtained classification model has been made available at [www.is-your-advice-unethical.com](http://www.is-your-advice-unethical.com).
 
 ## 2. EDA<a id='2.'></a>
 The data for this project are obtained from two subreddits on the online forum site [www.reddit.com](https://www.reddit.com): [LifeProTips](https://www.reddit.com/r/LifeProTips) and [UnethicalLifeProTips](https://www.reddit.com/r/UnethicalLifeProTips). The LifeProTips subreddit contains user-generated content in the form of advice, hints, and tips applying across all aspects of life. The UnethicalLifeProTips subreddit contains similar content with the difference being that the tips are unethical, or at best, in an ethical gray area. The data was obtained by scraping the most recent 5000 posts from each subreddit in early January 2021 using the [pushshift](https://pushshift.io/) API. The posts collected run the spectrum from making you laugh to making you cringe.
@@ -85,8 +85,8 @@ The modeling steps can be found in the [notebook](https://github.com/scatkinson/
  
 
 ### 4.0. Web app<a id='4.0.'></a>
-A web app where you can input a piece of advice and it will return the model's prediction on whether or not it belongs in the UnethicalLifeProTips subreddit is available at [link]. Have fun seeing what the model gets right and wrong!
+A web app where you can input a piece of advice and it will return the model's prediction on whether or not it belongs in the UnethicalLifeProTips subreddit is available at [www.is-your-advice-unethical.com](http://www.is-your-advice-unethical.com). Have fun seeing what the model gets right and wrong!
 
 
 ## 5. Blog post<a id='5.'></a>
-As mentioned throughout this document, you can find a write-up of the project in the form of a blog post at [link].
+As mentioned throughout this document, you can find a write-up of the project in the form of a blog post [here](https://scott-atkinson.medium.com/is-your-advice-unethical-2868f64bfb16).
