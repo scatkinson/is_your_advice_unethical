@@ -8,7 +8,7 @@ Scott Atkinson
 ## [2. EDA](#2.)
 * ### [2.0. Word frequency](#2.0.)
 * ### [2.1. Reading level](#2.1.)
-* ### [2.2. Custering topics](#2.2.)
+* ### [2.2. Clustering topics](#2.2.)
 
 ## [3. Preprocessing](#3.)
 * ### [3.0. Most predictive words](#3.0.)
