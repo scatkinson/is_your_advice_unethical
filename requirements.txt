@@ -1,5 +1,5 @@
 Flask==1.1.2
-sklearn
+scikit-learn
 nltk==3.5
 numpy==1.19.2
 pandas==1.1.1
